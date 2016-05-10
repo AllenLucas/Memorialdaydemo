@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/retitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/reportimager"
+        android:drawablePadding="20dp"
+        android:text="问题和意见反馈"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/rebuttommune"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rebtn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/rebtn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/reedtv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rebuttommune"
+        android:layout_below="@id/retitle"
+        android:hint="亲，在这里输入！有啥意见随便发，欢迎骚扰。" />
+</RelativeLayout>
